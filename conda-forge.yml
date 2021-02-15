@@ -15,6 +15,7 @@ provider:
 channels:
   sources:
     - valmar
+    - tidair-packages
     - conda-forge
     - defaults
   targets:
