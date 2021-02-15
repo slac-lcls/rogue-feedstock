@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/slaclab/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3a1a813267a29c2457275da706d79f3a15bb3e800c77e369010a4c2300e90743 
+  url: https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
+  sha256: d07a944fd87598d7849d874458c67dd26a26e953720a423b60e79dfd3c8dc561
 
 build:
   skip: True  # [win or osx]
