@@ -21,7 +21,7 @@ requirements:
      - cmake
      - make
    host:
-     - python<3.8
+     - python
      - boost
      - bzip2
      - zeromq
@@ -29,7 +29,7 @@ requirements:
      - pcas       [linux]
      - numpy
    run:
-     - python<3.8
+     - python
      - {{ pin_compatible('boost', min_pin='x.x', max_pin='x.x')}}
      - boost
      - bzip2
