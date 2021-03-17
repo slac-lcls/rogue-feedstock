@@ -14,7 +14,7 @@ provider:
   linux: travis
 channels:
   sources:
-    - valmar
+    - lcls-ii
     - tidair-packages
     - conda-forge
     - defaults
