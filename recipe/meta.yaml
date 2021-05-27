@@ -25,7 +25,7 @@ requirements:
      - boost
      - bzip2
      - zeromq
-     - epics-base=7.0.4 [linux]
+     - epics-base [linux]
      - pcas       [linux]
      - numpy
    run:
@@ -34,7 +34,7 @@ requirements:
      - boost
      - bzip2
      - zeromq
-     - epics-base=7.0.4 [linux]
+     - epics-base [linux]
      - pcas       [linux]
      - numpy
      - ipython
