@@ -1,17 +1,17 @@
 {% set name = "rogue" %}
-{% set version = "v5.8.0" %}
+{% set version = "v5.9.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pswww.slac.stanford.edu/swdoc/tutorials/{{ name }}-{{ version }}.tar.gz
-  sha256: 742e9813f0ce403db2aa7d6e5e72b70deb02dd85773b6cae92b0015e4308a0da 
+  url: rogue-v5.9.3.tar.gz
+  sha256: 93d8187af02b61b8bcfab05b8c1892b441058bf40648a7f36d141eb629a2da07
 
 build:
   skip: True  # [win or osx]
-  number: 3
+  number: 5
 
 requirements:
    build:
