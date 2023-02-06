@@ -1,13 +1,13 @@
 {% set name = "rogue" %}
-{% set version = "v5.14.0" %}
+{% set version = "v5.16.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: ./rogue-5.14.0.tar.gz
-  sha256: 9ed3adf8fc90cdcd3babc566b0ad0f3c8327b81f98331f15398bd75e9cbd38d2
+  url: ./rogue-5.16.0.tar.gz
+  sha256: 74ee0df19e01fbfef0cedb09a0a3dee5348e1d4a5547a1836e49fe87eff1d4f1
 
 build:
   skip: True  # [win or osx]
