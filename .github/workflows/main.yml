@@ -21,4 +21,4 @@ jobs:
       - name: build package
         run: |
           $CONDA/bin/conda config --set anaconda_upload yes
-          $CONDA/bin/conda build --user lcls-ii --token ${{ secrets.ANACONDA_TOKEN }} -c lcls-ii -c conda-forge recipe
+          $CONDA/bin/conda build --user lcls-ii --token ${{ secrets.ANACONDA_TOKEN }} -c tidair-packages -c lcls-ii -c conda-forge recipe
