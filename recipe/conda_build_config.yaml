@@ -1,4 +1,0 @@
-channel_sources:
-  - lcls-ii,tidair-packages,conda-forge,defaults
-channel_targets:
-  - lcls-ii main
