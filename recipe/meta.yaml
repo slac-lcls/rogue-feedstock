@@ -1,17 +1,16 @@
 {% set name = "rogue" %}
-{% set version = "v5.18.4" %}
+{% set version = "v6.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: ./rogue-5.18.4.tar.gz
-  sha256: db249293f950436a929e8cc5c25771abba873b8f620202a8f9053a6c4ac18412 
+  url: ./rogue-6.1.1.tar.gz
+  sha256: c0762d850608dbef04c1c26337b0d7172f1d58849c7f6a529b854a0794bddcff
 
 build:
-  skip: True  # [win or osx]
-  number: 4
+   number: {{ environ.get('GIT_DESCRIBE_NUMBER',0) }}
 
 requirements:
    build:
@@ -21,34 +20,28 @@ requirements:
      - cmake
      - make
    host:
-     - python
+     - python=3.9
      - boost
      - bzip2
      - zeromq
-     - epics-base [linux]
-     - pcas       [linux]
      - numpy
    run:
-     - python
-     - {{ pin_compatible('boost', min_pin='x.x', max_pin='x.x')}}
+     - python=3.9
      - boost
      - bzip2
      - zeromq
-     - epics-base [linux]
-     - pcas       [linux]
      - numpy
      - ipython
-     - p4p        [linux]
+     - p4p
      - pyyaml
      - jsonpickle
      - pyzmq
      - parse
      - click
-     - pyqt
-     - pyepics    [linux]
      - sqlalchemy
-     - pydm
+     - pydm>=1.18.0
      - pyserial
+     - matplotlib
 
 about:
   home: https://github.com/slaclab/rogue
