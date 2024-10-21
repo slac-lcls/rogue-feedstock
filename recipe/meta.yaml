@@ -1,13 +1,13 @@
 {% set name = "rogue" %}
-{% set version = "v6.1.1" %}
+{% set version = "v6.1.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: ./rogue-6.1.1.tar.gz
-  sha256: c0762d850608dbef04c1c26337b0d7172f1d58849c7f6a529b854a0794bddcff
+  url: file:///sdf/group/lcls/ds/ana/sw/source_files/rogue-6.1.3.tar.gz
+  sha256: cddc55af0ff0d3c9047fab59d2bc72c72d0217ed31d928d1c5d54d790e96ba09 
 
 build:
    number: {{ environ.get('GIT_DESCRIBE_NUMBER',0) }}
